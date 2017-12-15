@@ -1,0 +1,48 @@
+sparrow.lo: /lab/sparrow/ext/sparrow.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/sparrow.c -o sparrow.lo 
+kernel/main.lo: /lab/sparrow/ext/kernel/main.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/main.c -o kernel/main.lo 
+kernel/memory.lo: /lab/sparrow/ext/kernel/memory.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/memory.c -o kernel/memory.lo 
+kernel/exception.lo: /lab/sparrow/ext/kernel/exception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/exception.c -o kernel/exception.lo 
+kernel/debug.lo: /lab/sparrow/ext/kernel/debug.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/debug.c -o kernel/debug.lo 
+kernel/backtrace.lo: /lab/sparrow/ext/kernel/backtrace.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/backtrace.c -o kernel/backtrace.lo 
+kernel/object.lo: /lab/sparrow/ext/kernel/object.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/object.c -o kernel/object.lo 
+kernel/array.lo: /lab/sparrow/ext/kernel/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/array.c -o kernel/array.lo 
+kernel/string.lo: /lab/sparrow/ext/kernel/string.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/string.c -o kernel/string.lo 
+kernel/fcall.lo: /lab/sparrow/ext/kernel/fcall.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/fcall.c -o kernel/fcall.lo 
+kernel/require.lo: /lab/sparrow/ext/kernel/require.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/require.c -o kernel/require.lo 
+kernel/file.lo: /lab/sparrow/ext/kernel/file.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/file.c -o kernel/file.lo 
+kernel/operators.lo: /lab/sparrow/ext/kernel/operators.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/operators.c -o kernel/operators.lo 
+kernel/math.lo: /lab/sparrow/ext/kernel/math.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/math.c -o kernel/math.lo 
+kernel/concat.lo: /lab/sparrow/ext/kernel/concat.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/concat.c -o kernel/concat.lo 
+kernel/variables.lo: /lab/sparrow/ext/kernel/variables.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/variables.c -o kernel/variables.lo 
+kernel/filter.lo: /lab/sparrow/ext/kernel/filter.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/filter.c -o kernel/filter.lo 
+kernel/iterator.lo: /lab/sparrow/ext/kernel/iterator.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/iterator.c -o kernel/iterator.lo 
+kernel/time.lo: /lab/sparrow/ext/kernel/time.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/time.c -o kernel/time.lo 
+kernel/exit.lo: /lab/sparrow/ext/kernel/exit.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/kernel/exit.c -o kernel/exit.lo 
+sparrow/lib/sparrow.lo: /lab/sparrow/ext/sparrow/lib/sparrow.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/lab/sparrow/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /lab/sparrow/ext/sparrow/lib/sparrow.zep.c -o sparrow/lib/sparrow.lo 
+$(phplibdir)/sparrow.la: ./sparrow.la
+	$(LIBTOOL) --mode=install cp ./sparrow.la $(phplibdir)
+
+./sparrow.la: $(shared_objects_sparrow) $(SPARROW_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_sparrow) $(SPARROW_SHARED_LIBADD)
+

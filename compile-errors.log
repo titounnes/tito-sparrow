@@ -1,0 +1,5 @@
+/lab/sparrow/ext/sparrow/lib/sparrow.zep.c: In function ‘zim_Sparrow_Lib_Sparrow_parseCondition’:
+/lab/sparrow/ext/sparrow/lib/sparrow.zep.c:570:42: warning: multi-character character constant [-Wmultichar]
+     if (ZEPHIR_IS_LONG(&operator$$3, '!@')) {
+                                          ^
+/lab/sparrow/ext/sparrow/lib/sparrow.zep.c:570:42: warning: multi-character character constant [-Wmultichar]

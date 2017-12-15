@@ -1,0 +1,35 @@
+libtool: compile:  gcc -I. -I/lab/sparrow/ext -DPHP_ATOM_INC -I/lab/sparrow/ext/include -I/lab/sparrow/ext/main -I/lab/sparrow/ext -I/usr/include/php/20170718 -I/usr/include/php/20170718/main -I/usr/include/php/20170718/TSRM -I/usr/include/php/20170718/Zend -I/usr/include/php/20170718/ext -I/usr/include/php/20170718/ext/date/lib -DHAVE_CONFIG_H -O2 -fvisibility=hidden -Wparentheses -flto -DZEPHIR_RELEASE=1 -c /lab/sparrow/ext/sparrow/lib/sparrow.zep.c  -fPIC -DPIC -o sparrow/lib/.libs/sparrow.o
+libtool: link: rm -fr  .libs/sparrow.la .libs/sparrow.lai .libs/sparrow.so
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/sparrow.o kernel/.libs/main.o kernel/.libs/memory.o kernel/.libs/exception.o kernel/.libs/debug.o kernel/.libs/backtrace.o kernel/.libs/object.o kernel/.libs/array.o kernel/.libs/string.o kernel/.libs/fcall.o kernel/.libs/require.o kernel/.libs/file.o kernel/.libs/operators.o kernel/.libs/math.o kernel/.libs/concat.o kernel/.libs/variables.o kernel/.libs/filter.o kernel/.libs/iterator.o kernel/.libs/time.o kernel/.libs/exit.o sparrow/lib/.libs/sparrow.o    -O2 -flto   -Wl,-soname -Wl,sparrow.so -o .libs/sparrow.so
+libtool: link: ( cd ".libs" && rm -f "sparrow.la" && ln -s "../sparrow.la" "sparrow.la" )
+libtool: install: cp ./.libs/sparrow.so /lab/sparrow/ext/modules/sparrow.so
+libtool: install: cp ./.libs/sparrow.lai /lab/sparrow/ext/modules/sparrow.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin:/usr/local/go/bin:/sbin" ldconfig -n /lab/sparrow/ext/modules
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /lab/sparrow/ext/modules
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+
+Build complete.
+Don't forget to run 'make test'.
+
+
+Build complete.
+Don't forget to run 'make test'.
+
+Installing shared extensions:     /usr/lib/php/20170718/
+Installing header files:          /usr/include/php/20170718/
